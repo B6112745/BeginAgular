@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
+})
+export class ProfileComponent implements OnInit {
+ id: string|undefined;
+ name: string|undefined;
+ year!: number
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.id = "B6112745";
+    this.name = "Chalintra Yotasi";
+    this.year = 2000;
+  }
+  getName(){
+    return this.name;
+  }
+
+}
